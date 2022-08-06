@@ -1,5 +1,5 @@
 # LocalDataViewer
-### View Local Data as UserDefaults of KeyChain
+### View Local Data as UserDefaults or KeyChain
 
 # Install
 
