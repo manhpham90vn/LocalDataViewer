@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LocalDataViewer'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'An debug helper show local data as UserDefaults or Keychain'
   s.homepage         = 'https://github.com/manhpham90vn/LocalDataViewer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

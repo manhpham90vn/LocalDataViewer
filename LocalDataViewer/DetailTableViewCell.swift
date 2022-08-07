@@ -10,11 +10,16 @@ import UIKit
 class DetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
+    
+    var data: DetailValue?
     
     func config(data: DetailValue) {
-        titleLabel.text = data.key
-        valueLabel.text = data.value as? String ?? "Can not view data"
+        titleLabel.text = data.displayText
+        self.data = data
+    }
+    
+    @IBAction func copyButtonDidTap(_ sender: Any) {
+        UIPasteboard.general.string = data?.displayText ?? ""
     }
     
 }

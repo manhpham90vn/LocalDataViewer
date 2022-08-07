@@ -19,11 +19,16 @@ class HomeController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: Bundle(for: Self.self)), forCellReuseIdentifier: "cell")
+        let closeBtn = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(close))
+        navigationItem.leftBarButtonItem = closeBtn
         let buttonRegisterUserDefaults = UIBarButtonItem(title: "Add SuiteName", style: .plain, target: self, action: #selector(handleAddUserDefault))
-        navigationItem.leftBarButtonItem = buttonRegisterUserDefaults
         let buttonRegisterKeyChain = UIBarButtonItem(title: "Add KeyChain", style: .plain, target: self, action: #selector(handleAddKeyChain))
-        navigationItem.rightBarButtonItem = buttonRegisterKeyChain
+        navigationItem.rightBarButtonItems = [buttonRegisterUserDefaults, buttonRegisterKeyChain]
         initDatas()
+    }
+    
+    @objc private func close() {
+        dismiss(animated: true, completion: nil)
     }
     
     @objc private func handleAddUserDefault() {
@@ -70,16 +75,16 @@ class HomeController: UIViewController {
     func getAllDataFromUserDefault(type: UserDefaultType) -> [DetailValue] {
         switch type {
         case .standard:
-            return UserDefaults.standard.dictionaryRepresentation().map { .init(key: $0.key, value: $0.value as Any) }
+            return UserDefaults.standard.dictionaryRepresentation().map { .init(key: $0.key, value: $0.value) }
         case let .suiteName(name, _):
-            return UserDefaults(suiteName: name)?.dictionaryRepresentation().map { .init(key: $0.key, value: $0.value as Any) } ?? []
+            return UserDefaults(suiteName: name)?.dictionaryRepresentation().map { .init(key: $0.key, value: $0.value) } ?? []
         }
     }
     
     func getAllDataFromKeyChain(type: KeychainType) -> [DetailValue] {
         switch type {
         case let .service(name, _):
-            return Keychain(service: name).allItems().map { .init(key: $0["key"] as? String ?? "", value: $0["value"] as Any) }
+            return Keychain(service: name).allItems().map { .init(key: $0["key"] as? String ?? "", value: $0["value"] ?? "") }
         }
     }
     

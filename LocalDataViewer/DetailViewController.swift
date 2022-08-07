@@ -10,6 +10,24 @@ import UIKit
 struct DetailValue {
     var key: String
     var value: Any
+    
+    var displayText: String {
+        if let value = value as? String {
+             return "\(key):\(value)"
+        } else if let value = value as? Int {
+            return "\(key):\(value)"
+        } else if let value = value as? Double {
+            return "\(key):\(value)"
+        } else if let value = value as? Float {
+            return "\(key):\(value)"
+        } else if let value = value as? Bool {
+            return "\(key):\(value)"
+        } else if let value = value as? URL {
+            return "\(key):\(value.absoluteString)"
+        } else {
+            return "\(key):Can not view data"
+        }
+    }
 }
 
 class DetailViewController: UIViewController {
@@ -21,7 +39,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.delegate = self
+        tableView.estimatedRowHeight = 70
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: "DetailTableViewCell", bundle: Bundle(for: Self.self)), forCellReuseIdentifier: "cell")
     }
     
@@ -40,11 +59,5 @@ extension DetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetailTableViewCell
         cell.config(data: dataSources[indexPath.row])
         return cell
-    }
-}
-
-extension DetailViewController: UITableViewDelegate {    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        44
     }
 }

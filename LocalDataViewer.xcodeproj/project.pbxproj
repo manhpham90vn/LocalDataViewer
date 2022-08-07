@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		61C1C66A8C5CF6AEE7CBB2B2 /* Pods_LocalDataViewer_LocalDataViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FDF054EE6ECB7936B283FC /* Pods_LocalDataViewer_LocalDataViewerTests.framework */; };
+		BB8D9680289F4E7000E4B386 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8D9676289F4E7000E4B386 /* DetailTableViewCell.xib */; };
+		BB8D9681289F4E7000E4B386 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8D9677289F4E7000E4B386 /* Home.storyboard */; };
+		BB8D9682289F4E7000E4B386 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D9678289F4E7000E4B386 /* DetailTableViewCell.swift */; };
+		BB8D9684289F4E7000E4B386 /* LocalDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D967A289F4E7000E4B386 /* LocalDataType.swift */; };
+		BB8D9685289F4E7000E4B386 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D967B289F4E7000E4B386 /* HomeController.swift */; };
+		BB8D9686289F4E7000E4B386 /* LocalDataViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D967C289F4E7000E4B386 /* LocalDataViewer.swift */; };
+		BB8D9687289F4E7000E4B386 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D967D289F4E7000E4B386 /* HomeTableViewCell.swift */; };
+		BB8D9688289F4E7000E4B386 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D967E289F4E7000E4B386 /* DetailViewController.swift */; };
+		BB8D9689289F4E7000E4B386 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8D967F289F4E7000E4B386 /* HomeTableViewCell.xib */; };
 		BBF48A2B289EE27A0087BE15 /* LocalDataViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF48A20289EE27A0087BE15 /* LocalDataViewer.framework */; };
 		BBF48A30289EE27A0087BE15 /* LocalDataViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A2F289EE27A0087BE15 /* LocalDataViewerTests.swift */; };
 		BBF48A31289EE27A0087BE15 /* LocalDataViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF48A23289EE27A0087BE15 /* LocalDataViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBF48A49289EE29F0087BE15 /* LocalDataViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A3A289EE29F0087BE15 /* LocalDataViewer.swift */; };
-		BBF48A4A289EE29F0087BE15 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A3D289EE29F0087BE15 /* DetailTableViewCell.swift */; };
-		BBF48A4B289EE29F0087BE15 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF48A3E289EE29F0087BE15 /* DetailTableViewCell.xib */; };
-		BBF48A4C289EE29F0087BE15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A3F289EE29F0087BE15 /* DetailViewController.swift */; };
-		BBF48A4D289EE29F0087BE15 /* LocalDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A41289EE29F0087BE15 /* LocalDataType.swift */; };
-		BBF48A4E289EE29F0087BE15 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A44289EE29F0087BE15 /* HomeTableViewCell.swift */; };
-		BBF48A4F289EE29F0087BE15 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF48A45289EE29F0087BE15 /* HomeTableViewCell.xib */; };
-		BBF48A50289EE29F0087BE15 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A46289EE29F0087BE15 /* HomeController.swift */; };
-		BBF48A51289EE29F0087BE15 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF48A47289EE29F0087BE15 /* Home.storyboard */; };
 		BBF48A59289EE3590087BE15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A58289EE3590087BE15 /* AppDelegate.swift */; };
 		BBF48A5B289EE3590087BE15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A5A289EE3590087BE15 /* SceneDelegate.swift */; };
 		BBF48A5D289EE3590087BE15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF48A5C289EE3590087BE15 /* ViewController.swift */; };
@@ -68,19 +68,20 @@
 		97FDF054EE6ECB7936B283FC /* Pods_LocalDataViewer_LocalDataViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalDataViewer_LocalDataViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F13BF508250E30DD9C4047 /* Pods_SampleApp_SampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp_SampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33BF10CABBE715B362E8B95 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BB8D9676289F4E7000E4B386 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		BB8D9677289F4E7000E4B386 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BB8D9678289F4E7000E4B386 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		BB8D9679289F4E7000E4B386 /* LocalDataViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataViewer.h; sourceTree = "<group>"; };
+		BB8D967A289F4E7000E4B386 /* LocalDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataType.swift; sourceTree = "<group>"; };
+		BB8D967B289F4E7000E4B386 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		BB8D967C289F4E7000E4B386 /* LocalDataViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataViewer.swift; sourceTree = "<group>"; };
+		BB8D967D289F4E7000E4B386 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		BB8D967E289F4E7000E4B386 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB8D967F289F4E7000E4B386 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		BBF48A20289EE27A0087BE15 /* LocalDataViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalDataViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF48A23289EE27A0087BE15 /* LocalDataViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataViewer.h; sourceTree = "<group>"; };
 		BBF48A2A289EE27A0087BE15 /* LocalDataViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalDataViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF48A2F289EE27A0087BE15 /* LocalDataViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataViewerTests.swift; sourceTree = "<group>"; };
-		BBF48A3A289EE29F0087BE15 /* LocalDataViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataViewer.swift; sourceTree = "<group>"; };
-		BBF48A3D289EE29F0087BE15 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		BBF48A3E289EE29F0087BE15 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
-		BBF48A3F289EE29F0087BE15 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		BBF48A41289EE29F0087BE15 /* LocalDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataType.swift; sourceTree = "<group>"; };
-		BBF48A44289EE29F0087BE15 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		BBF48A45289EE29F0087BE15 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		BBF48A46289EE29F0087BE15 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		BBF48A48289EE29F0087BE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		BBF48A56289EE3590087BE15 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF48A58289EE3590087BE15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF48A5A289EE3590087BE15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,10 +197,16 @@
 		BBF48A22289EE27A0087BE15 /* LocalDataViewer */ = {
 			isa = PBXGroup;
 			children = (
-				BBF48A40289EE29F0087BE15 /* Data */,
-				BBF48A3B289EE29F0087BE15 /* Detail */,
-				BBF48A42289EE29F0087BE15 /* Home */,
-				BBF48A3A289EE29F0087BE15 /* LocalDataViewer.swift */,
+				BB8D9678289F4E7000E4B386 /* DetailTableViewCell.swift */,
+				BB8D9676289F4E7000E4B386 /* DetailTableViewCell.xib */,
+				BB8D967E289F4E7000E4B386 /* DetailViewController.swift */,
+				BB8D9677289F4E7000E4B386 /* Home.storyboard */,
+				BB8D967B289F4E7000E4B386 /* HomeController.swift */,
+				BB8D967D289F4E7000E4B386 /* HomeTableViewCell.swift */,
+				BB8D967F289F4E7000E4B386 /* HomeTableViewCell.xib */,
+				BB8D967A289F4E7000E4B386 /* LocalDataType.swift */,
+				BB8D9679289F4E7000E4B386 /* LocalDataViewer.h */,
+				BB8D967C289F4E7000E4B386 /* LocalDataViewer.swift */,
 				BBF48A23289EE27A0087BE15 /* LocalDataViewer.h */,
 			);
 			path = LocalDataViewer;
@@ -211,51 +218,6 @@
 				BBF48A2F289EE27A0087BE15 /* LocalDataViewerTests.swift */,
 			);
 			path = LocalDataViewerTests;
-			sourceTree = "<group>";
-		};
-		BBF48A3B289EE29F0087BE15 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				BBF48A3C289EE29F0087BE15 /* Cells */,
-				BBF48A3F289EE29F0087BE15 /* DetailViewController.swift */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		BBF48A3C289EE29F0087BE15 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				BBF48A3D289EE29F0087BE15 /* DetailTableViewCell.swift */,
-				BBF48A3E289EE29F0087BE15 /* DetailTableViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		BBF48A40289EE29F0087BE15 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				BBF48A41289EE29F0087BE15 /* LocalDataType.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		BBF48A42289EE29F0087BE15 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				BBF48A43289EE29F0087BE15 /* Cells */,
-				BBF48A46289EE29F0087BE15 /* HomeController.swift */,
-				BBF48A47289EE29F0087BE15 /* Home.storyboard */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		BBF48A43289EE29F0087BE15 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				BBF48A44289EE29F0087BE15 /* HomeTableViewCell.swift */,
-				BBF48A45289EE29F0087BE15 /* HomeTableViewCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		BBF48A57289EE3590087BE15 /* SampleApp */ = {
@@ -471,9 +433,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF48A51289EE29F0087BE15 /* Home.storyboard in Resources */,
-				BBF48A4F289EE29F0087BE15 /* HomeTableViewCell.xib in Resources */,
-				BBF48A4B289EE29F0087BE15 /* DetailTableViewCell.xib in Resources */,
+				BB8D9680289F4E7000E4B386 /* DetailTableViewCell.xib in Resources */,
+				BB8D9689289F4E7000E4B386 /* HomeTableViewCell.xib in Resources */,
+				BB8D9681289F4E7000E4B386 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,12 +641,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF48A4C289EE29F0087BE15 /* DetailViewController.swift in Sources */,
-				BBF48A4E289EE29F0087BE15 /* HomeTableViewCell.swift in Sources */,
-				BBF48A50289EE29F0087BE15 /* HomeController.swift in Sources */,
-				BBF48A4D289EE29F0087BE15 /* LocalDataType.swift in Sources */,
-				BBF48A4A289EE29F0087BE15 /* DetailTableViewCell.swift in Sources */,
-				BBF48A49289EE29F0087BE15 /* LocalDataViewer.swift in Sources */,
+				BB8D9687289F4E7000E4B386 /* HomeTableViewCell.swift in Sources */,
+				BB8D9686289F4E7000E4B386 /* LocalDataViewer.swift in Sources */,
+				BB8D9685289F4E7000E4B386 /* HomeController.swift in Sources */,
+				BB8D9684289F4E7000E4B386 /* LocalDataType.swift in Sources */,
+				BB8D9682289F4E7000E4B386 /* DetailTableViewCell.swift in Sources */,
+				BB8D9688289F4E7000E4B386 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,14 +706,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BBF48A47289EE29F0087BE15 /* Home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBF48A48289EE29F0087BE15 /* Base */,
-			);
-			name = Home.storyboard;
-			sourceTree = "<group>";
-		};
 		BBF48A5E289EE3590087BE15 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
