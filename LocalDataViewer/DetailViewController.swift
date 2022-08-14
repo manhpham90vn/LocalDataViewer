@@ -12,21 +12,7 @@ struct DetailValue {
     var value: Any
     
     var displayText: String {
-        if let value = value as? String {
-             return "\(key):\(value)"
-        } else if let value = value as? Int {
-            return "\(key):\(value)"
-        } else if let value = value as? Double {
-            return "\(key):\(value)"
-        } else if let value = value as? Float {
-            return "\(key):\(value)"
-        } else if let value = value as? Bool {
-            return "\(key):\(value)"
-        } else if let value = value as? URL {
-            return "\(key):\(value.absoluteString)"
-        } else {
-            return "\(key):Can not view data"
-        }
+        return "\(key):\(value)"
     }
 }
 
